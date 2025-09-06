@@ -25,23 +25,23 @@ View individual blog post details.
 Categories: Example categories: Mental Health, Heart Disease, Covid19, Immunization.
 
 Project Structure
-flask_role_blog/
-│
-├── app.py                 # Main Flask application
-├── models.py              # Database models (User, BlogPost, Category)
-├── forms.py               # Flask-WTF forms (Login, Register, CreatePost)
-├── config.py              # Configuration (DB URI, secret key)
-├── static/
-│   └── uploads/           # Stores blog images
-├── templates/             # HTML templates
-│   ├── base.html
-│   ├── login.html
-│   ├── register.html
-│   ├── doctor_dashboard.html
-│   ├── create_post.html
-│   ├── patient_dashboard.html
-│   └── view_post.html
-└── requirements.txt       # Python dependencies
+          flask_role_blog/
+          │
+          ├── app.py                 # Main Flask application
+          ├── models.py              # Database models (User, BlogPost, Category)
+          ├── forms.py               # Flask-WTF forms (Login, Register, CreatePost)
+          ├── config.py              # Configuration (DB URI, secret key)
+          ├── static/
+          │   └── uploads/           # Stores blog images
+          ├── templates/             # HTML templates
+          │   ├── base.html
+          │   ├── login.html
+          │   ├── register.html
+          │   ├── doctor_dashboard.html
+          │   ├── create_post.html
+          │   ├── patient_dashboard.html
+          │   └── view_post.html
+          └── requirements.txt       # Python dependencies
 
 Technologies Used
 
