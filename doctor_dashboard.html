@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="mb-4">Doctor Dashboard</h2>
+<a href="{{ url_for('create_post') }}" class="btn btn-success mb-3">➕ Create New Post</a>
+
+{% if posts %}
+<div class="row">
+    {% for post in posts %}
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            {% if post.image %}
+            <img src="{{ url_for('static', filename='uploads/' + post.image) }}" class="card-img-top" alt="Post Image">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p><span class="badge bg-info">{{ post.category }}</span></p>
+                <p class="card-text">{{ post.summary[:50] }}{% if post.summary|length > 50 %}...{% endif %}</p>
+                <a href="{{ url_for('view_post', post_id=post.id) }}" class="btn btn-primary btn-sm">View</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p class="text-muted">You have not created any posts yet.</p>
+{% endif %}
+{% endblock %}

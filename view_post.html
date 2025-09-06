@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow">
+    {% if post.image %}
+    <img src="{{ url_for('static', filename='uploads/' + post.image) }}" class="card-img-top" alt="Post Image">
+    {% endif %}
+    <div class="card-body">
+        <h2>{{ post.title }}</h2>
+        <p><span class="badge bg-info">{{ post.category }}</span></p>
+        <p class="text-muted">Posted by Dr. {{ post.author.username }} on {{ post.created_at.strftime('%d %B %Y') }}</p>
+        <hr>
+        <p>{{ post.content }}</p>
+    </div>
+</div>
+{% endblock %}
