@@ -13,7 +13,6 @@ A Flask-based web application that allows doctors to upload blog posts for patie
 ### Patient Role:
 - View all blog posts that are **not marked as draft**.
 - Posts are displayed **category-wise**.
-- **Summary is truncated to 15 words** followed by `...` if longer.
 - View individual blog post details.
 
 ### Categories:
