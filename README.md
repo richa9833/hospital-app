@@ -43,7 +43,7 @@ Example categories: **Mental Health, Heart Disease, Covid19, Immunization**.
 ## Technologies Used
 
 - **Backend:** Python, Flask, Flask-WTF  
-- **Frontend:** HTML, CSS, Bootstrap, optional JS libraries  
+- **Frontend:** HTML, CSS
 - **Database:** MySQL  
 - **ORM:** Flask SQLAlchemy  
 - **Authentication & Roles:** Flask-Login
